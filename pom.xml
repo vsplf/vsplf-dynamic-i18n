@@ -46,4 +46,8 @@
     </repository>
   </repositories>
 
+  <modules>
+    <module>vsplf-dynamic-i18n-api</module>
+  </modules>
+
 </project>
