@@ -16,12 +16,16 @@
 package org.vsplf.i18n;
 
 /**
- * The application entry point for bootstrap.
+ * The application entry point.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
- * @since 2/23/12
+ * @since  Feb 23, 2012
  */
-public class DynamicI18N {
+public final class DynamicI18N {
+
+  private DynamicI18N() {
+
+  }
 
   public static TranslatorFactory buildDefaultTranslatorFactory() {
     return null;
