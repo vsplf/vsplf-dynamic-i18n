@@ -10,6 +10,7 @@ https://github.com/vsplf/vsplf-dynamic-i18n/wiki
 
 Use [Apache Maven][maven] version 3.0.0 minimum. Version 3.0.3 and above is recommended.
 
+[maven]: http://maven.apache.org "Apache Maven"
 
 ### Default build
 
