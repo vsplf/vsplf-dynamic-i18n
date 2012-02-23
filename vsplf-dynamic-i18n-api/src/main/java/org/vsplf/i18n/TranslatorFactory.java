@@ -13,8 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.vsplf.i18n;
 
 /**
- * Dynamic-I18N framework from VSPLF Software Foundation
+ * The Translator factory class
+ *
+ * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
+ * @since Feb 23, 2012
  */
-package org.vsplf.i18n;
+public interface TranslatorFactory {
+
+  Translator getTranslator();
+}

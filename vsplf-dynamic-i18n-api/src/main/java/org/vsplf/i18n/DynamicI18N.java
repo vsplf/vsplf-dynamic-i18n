@@ -13,8 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.vsplf.i18n;
 
 /**
- * Dynamic-I18N framework from VSPLF Software Foundation
+ * The application entry point for bootstrap.
+ *
+ * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
+ * @since 2/23/12
  */
-package org.vsplf.i18n;
+public class DynamicI18N {
+
+  public static TranslatorFactory buildDefaultTranslatorFactory() {
+    return null;
+  }
+}

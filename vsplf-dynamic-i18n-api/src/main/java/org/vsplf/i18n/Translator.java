@@ -16,6 +16,7 @@
 package org.vsplf.i18n;
 
 /**
+ * The translator
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
  * @since  Feb 22, 2012
