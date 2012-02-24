@@ -33,6 +33,11 @@
   <name>vsplf-dynamic-i18n</name>
   <url>http://vsplf.org/projects/vsplf-dynamic-i18n</url>
 
+  <properties>
+    <vsplf-build-tools.version>0.1.0-SNAPSHOT</vsplf-build-tools.version>
+  </properties>
+
+
   <repositories>
     <repository>
       <id>vsplf-release</id>
@@ -56,6 +61,17 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>${maven-checkstyle-plugin.version}</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.vsplf.vsplf-tools</groupId>
+            <artifactId>vsplf-build-tools</artifactId>
+            <version>${vsplf-build-tools.version}</version>
+          </dependency>
+        </dependencies>
+        <configuration>
+          <configLocation>config/vsplf/vsplf-checkstyle.xml</configLocation>
+          <headerLocation>config/vsplf/LICENSE.txt</headerLocation>
+        </configuration>
         <executions>
           <execution>
             <phase>compile</phase>
@@ -74,6 +90,10 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>${maven-checkstyle-plugin.version}</version>
+        <configuration>
+          <configLocation>config/vsplf/vsplf-checkstyle.xml</configLocation>
+          <headerLocation>config/vsplf/LICENSE.txt</headerLocation>
+        </configuration>
       </plugin>
     </plugins>
   </reporting>
