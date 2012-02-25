@@ -19,9 +19,12 @@ subprojects {
   apply plugin: 'eclipse'
 
   repositories {
+    mavenRepo(url: 'http://repository-vsplf.forge.cloudbees.com/snapshot/')
+    mavenRepo(url: 'http://repository-vsplf.forge.cloudbees.com/release/')
     mavenCentral()
   }
 
+  group = 'org.vsplf'
   version = '0.1.0-SNAPSHOT'
 
 }
