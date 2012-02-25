@@ -1,0 +1,3 @@
+[submodule "vsplf-tools"]
+	path = vsplf-tools
+	url = git://github.com/vsplf/vsplf-tools.git

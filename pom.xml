@@ -56,15 +56,6 @@
       </releases>
     </repository>
   </repositories>
-  <!--
-  <dependencies>
-    <dependency>
-      <groupId>org.vsplf.vsplf-tools</groupId>
-      <artifactId>vsplf-build-tools</artifactId>
-      <version>${vsplf-build-tools.version}</version>
-    </dependency>
-  </dependencies>
-  -->
 
   <modules>
     <module>vsplf-dynamic-i18n-api</module>
@@ -85,17 +76,9 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>
             <version>${maven-checkstyle-plugin.version}</version>
-            <dependencies>
-              <dependency>
-                <groupId>org.vsplf.vsplf-tools</groupId>
-                <artifactId>vsplf-build-tools</artifactId>
-                <version>${vsplf-build-tools.version}</version>
-                <scope>compile</scope>
-              </dependency>
-            </dependencies>
             <configuration>
-              <configLocation>config/vsplf/vsplf-checkstyle.xml</configLocation>
-              <headerLocation>config/vsplf/LICENSE.txt</headerLocation>
+              <configLocation>vsplf-tools/config/checkstyle/vsplf-checkstyle.xml</configLocation>
+              <headerLocation>vsplf-tools/config/checkstyle/java.header</headerLocation>
             </configuration>
             <executions>
               <execution>
@@ -119,8 +102,8 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>${maven-checkstyle-plugin.version}</version>
         <configuration>
-          <configLocation>config/vsplf/vsplf-checkstyle.xml</configLocation>
-          <headerLocation>config/vsplf/LICENSE.txt</headerLocation>
+          <configLocation>vsplf-tools/config/checkstyle/vsplf-checkstyle.xml</configLocation>
+          <headerLocation>vsplf/tools/config/checkstyle/java.header</headerLocation>
         </configuration>
       </plugin>
     </plugins>
