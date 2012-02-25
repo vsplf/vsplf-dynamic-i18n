@@ -6,5 +6,8 @@ target
 *.classpath
 .settings
 .DS_Store
-
-
+//for gradle
+.gradle
+build
+//for prject
+vsplf-tools
