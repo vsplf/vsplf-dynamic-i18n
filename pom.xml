@@ -42,47 +42,75 @@
     <repository>
       <id>vsplf-release</id>
       <name>vsplf release repo</name>
-      <url>https://repository-vsplf.forge.cloudbees.com/release/</url>
+      <url>http://repository-vsplf.forge.cloudbees.com/release/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
     </repository>
     <repository>
       <id>vsplf-snapshot</id>
       <name>vsplf snapshot repo</name>
-      <url>https://repository-vsplf.forge.cloudbees.com/snapshot/</url>
+      <url>http://repository-vsplf.forge.cloudbees.com/snapshot/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
     </repository>
   </repositories>
+  <!--
+  <dependencies>
+    <dependency>
+      <groupId>org.vsplf.vsplf-tools</groupId>
+      <artifactId>vsplf-build-tools</artifactId>
+      <version>${vsplf-build-tools.version}</version>
+    </dependency>
+  </dependencies>
+  -->
 
   <modules>
     <module>vsplf-dynamic-i18n-api</module>
   </modules>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>${maven-checkstyle-plugin.version}</version>
-        <dependencies>
-          <dependency>
-            <groupId>org.vsplf.vsplf-tools</groupId>
-            <artifactId>vsplf-build-tools</artifactId>
-            <version>${vsplf-build-tools.version}</version>
-          </dependency>
-        </dependencies>
-        <configuration>
-          <configLocation>config/vsplf/vsplf-checkstyle.xml</configLocation>
-          <headerLocation>config/vsplf/LICENSE.txt</headerLocation>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>compile</phase>
-            <goals>
-              <goal>checkstyle</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
+
+  <profiles>
+    <profile>
+      <id>vsplf.violations.checking</id>
+      <activation>
+        <property>
+          <name>vsplf.violations.checking</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>${maven-checkstyle-plugin.version}</version>
+            <dependencies>
+              <dependency>
+                <groupId>org.vsplf.vsplf-tools</groupId>
+                <artifactId>vsplf-build-tools</artifactId>
+                <version>${vsplf-build-tools.version}</version>
+                <scope>compile</scope>
+              </dependency>
+            </dependencies>
+            <configuration>
+              <configLocation>config/vsplf/vsplf-checkstyle.xml</configLocation>
+              <headerLocation>config/vsplf/LICENSE.txt</headerLocation>
+            </configuration>
+            <executions>
+              <execution>
+                <phase>compile</phase>
+                <goals>
+                  <goal>checkstyle</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
 
   <reporting>
     <plugins>
