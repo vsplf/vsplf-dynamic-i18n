@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 VSPLF Software Foundation (VSF)
+ * Copyright (C) VSPLF Software Foundation (VSF), the origin author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
