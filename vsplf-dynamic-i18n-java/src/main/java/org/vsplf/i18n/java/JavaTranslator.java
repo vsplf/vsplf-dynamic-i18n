@@ -43,7 +43,8 @@ public class JavaTranslator implements Translator {
   }
 
   @Override
-  public String plural_(String singularMessageId, String pluralMessageId, long count, Map<String, String> messageArguments) {
+  public String plural_(String singularMessageId, String pluralMessageId, long count,
+                        Map<String, String> messageArguments) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 
@@ -58,7 +59,8 @@ public class JavaTranslator implements Translator {
   }
 
   @Override
-  public String sPlural_(String singularMessageId, String pluralMessageId, long count, Map<String, String> messageArguments) {
+  public String sPlural_(String singularMessageId, String pluralMessageId, long count,
+                         Map<String, String> messageArguments) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 }

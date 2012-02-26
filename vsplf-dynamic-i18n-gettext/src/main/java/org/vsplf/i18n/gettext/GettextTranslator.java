@@ -13,44 +13,54 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.vsplf.i18n.impl;
+package org.vsplf.i18n.gettext;
 
-import java.util.List;
-import java.util.Locale;
+import java.util.Map;
 
-import org.vsplf.i18n.ITranslatorFactory;
 import org.vsplf.i18n.Translator;
 
 /**
- * TranslatorFactory implementation for gettext.
+ * Translator implementation for GNU gettext.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
  * @since Feb 27, 2012
  */
-public class GettextTranslatorFactory implements ITranslatorFactory {
+public class GettextTranslator implements Translator {
 
   @Override
-  public Translator getTranslator() {
+  public String _(String messageId) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 
   @Override
-  public Locale getCurrentSelectedLocale() {
+  public String _(String messageId, Map<String, String> messageArguments) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 
   @Override
-  public void setCurrentSelectedLocale(Locale selectedLocale) {
-    //To change body of implemented methods use File | Settings | File Templates.
-  }
-
-  @Override
-  public Locale getDefaultLocale() {
+  public String plural_(String singularMessageId, String pluralMessageId, long count) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 
   @Override
-  public List<Locale> getSupportedLocales() {
+  public String plural_(String singularMessageId, String pluralMessageId, long count,
+                        Map<String, String> messageArguments) {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
+  public String s_(String messageId) {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
+  public String sPlural_(String singularMessageId, String pluralMessageId, long count) {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
+  public String sPlural_(String singularMessageId, String pluralMessageId, long count,
+                         Map<String, String> messageArguments) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 

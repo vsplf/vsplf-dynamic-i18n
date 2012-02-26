@@ -19,7 +19,7 @@ import org.vsplf.i18n.ITranslatorFactory;
 import org.vsplf.i18n.spi.TranslatorFactoryBinder;
 
 /**
- * StaticTranslatorFactoryBindler for GNU gettext implementation.
+ * Static TranslatorFactoryBinder for GNU gettext implementation.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
  * @since Feb 27, 2012
