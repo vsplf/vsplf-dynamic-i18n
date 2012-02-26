@@ -60,6 +60,7 @@
   <modules>
     <module>vsplf-dynamic-i18n-api</module>
     <module>vsplf-dynamic-i18n-gettext</module>
+    <module>vsplf-dynamic-i18n-java</module>
   </modules>
 
   <profiles>
