@@ -31,7 +31,14 @@ public interface ILocaleAware {
    *
    * @return the current selected locale.
    */
-  Locale getCurrentLocale();
+  Locale getCurrentSelectedLocale();
+
+  /**
+   * Sets the current selected locale.
+   *
+   * @param selectedLocale the selected locale.
+   */
+  void setCurrentSelectedLocale(Locale selectedLocale);
 
   /**
    * Gets the default Locale.
