@@ -12,12 +12,23 @@ Use [Apache Maven][maven] version 3.0.0 minimum. Version 3.0.3 and above is reco
 
 [maven]: http://maven.apache.org "Apache Maven"
 
-### Default build
+### Default Build
 
 Use this command to build project:
 
-    mvn clean install
+<pre>
+  mvn clean install
+</pre>
 
+### Violations Checking Build
+
+To check any violations, use this command below:
+
+<pre>
+  git submodule init
+  git submodule update
+  mvn clean install -Dvsplf.violations.checking
+</pre>
 
 ### Project resources
 
