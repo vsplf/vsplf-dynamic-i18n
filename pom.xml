@@ -59,8 +59,8 @@
 
   <modules>
     <module>vsplf-dynamic-i18n-api</module>
+    <module>vsplf-dynamic-i18n-gettext</module>
   </modules>
-
 
   <profiles>
     <profile>
