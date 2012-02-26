@@ -13,13 +13,37 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.vsplf.i18n;
+
+import java.util.List;
+import java.util.Locale;
 
 /**
- * Dynamic-I18N framework from VSPLF Software Foundation
- * <h1>Introduction</h1>
+ * The LocaleAware interface.
  *
- * <h1>With application developers</h1>
- *
- * <h1>With implementers</h1>
+ * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
+ * @since Feb 27, 2012
  */
-package org.vsplf.i18n;
+public interface ILocaleAware {
+
+  /**
+   * Gets the current selected locale.
+   *
+   * @return the current selected locale.
+   */
+  Locale getCurrentLocale();
+
+  /**
+   * Gets the default Locale.
+   *
+   * @return the default locale.
+   */
+  Locale getDefaultLocale();
+
+  /**
+   * Gets the list of supported locales.
+   *
+   * @return the list of supported locales.
+   */
+  List<Locale> getSupportedLocales();
+}

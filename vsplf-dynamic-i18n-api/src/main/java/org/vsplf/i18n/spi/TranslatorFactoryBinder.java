@@ -13,21 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.vsplf.i18n;
+package org.vsplf.i18n.spi;
+
+import org.vsplf.i18n.ITranslatorFactory;
 
 /**
- * The application entry point.
+ * The TranslatorFactoryBinder as service provider interface for alternative implementations.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
- * @since  Feb 23, 2012
+ * @since Feb 26, 2012
  */
-public final class DynamicI18N {
+public interface TranslatorFactoryBinder {
 
-  private DynamicI18N() {
+  /**
+   * Gets the ITranslatorFactory instance.
+   *
+   * @return the translator factory
+   */
+  ITranslatorFactory getTranslatorFactory();
 
-  }
-
-  public static TranslatorFactory buildDefaultTranslatorFactory() {
-    return null;
-  }
 }

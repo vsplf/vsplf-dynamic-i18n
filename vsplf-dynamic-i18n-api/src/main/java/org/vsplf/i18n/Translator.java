@@ -15,12 +15,60 @@
  */
 package org.vsplf.i18n;
 
+import java.util.Map;
+
 /**
- * The translator
+ * The Translator APIs to translate any message. This class must be used by client to have dynamic
+ * i18n and for automatic tool handling.
+ * <p/>
+ * These APIs are inspired from Drupal's Locale APIs, gettext-commons APIs, GNU gettext APIs.
+ * <p/>
+ * Sample code for client code:
+ * <pre>
+ *   Translator t = TranslatorFactory.getTranslator();
+ *   t._("Hello World Out There!");
+ *   t.plural_("I see only 1 star", "I see {0} stars", 2);
+ * </pre>
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
- * @since  Feb 22, 2012
+ * @since Feb 22, 2012
  */
 public interface Translator {
+
+  /**
+   * Translates a simple message id.
+   *
+   * @param messageId the message id
+   * @return
+   */
+  String _(String messageId);
+
+  String _(String messageId, Map<String, String> messageArguments);
+
+
+  String plural_(String singularMessageId, String pluralMessageId, long count);
+
+  //TODO count vs messageArguments?
+  /*
+    t.plural_("I see 1 star", "I see {0} starts", 2);
+
+    Map<String, String> arguments = new HashMap<String, String>();
+    arguments.put("star_count", 2);
+    t.plural_("I see 1 star, "I see {@star_count}", 2, arguments); //TODO Is this good APIs?
+   */
+  String plural_(String singularMessageId, String pluralMessageId, long count,
+                 Map<String, String> messageArguments);
+
+  /*
+  For the purpose of offline installation, static i18n, logging purpose (?)
+  http://www.slf4j.org/localization.html
+  */
+
+  String s_(String messageId);
+
+  String sPlural_(String singularMessageId, String pluralMessageId, long count);
+
+  String sPlural_(String singularMessageId, String pluralMessageId, long count,
+                  Map<String, String> messageArguments);
 
 }

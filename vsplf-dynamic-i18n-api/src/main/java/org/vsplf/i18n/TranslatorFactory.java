@@ -15,13 +15,40 @@
  */
 package org.vsplf.i18n;
 
+import java.util.List;
+import java.util.Locale;
+
 /**
- * The Translator factory class
+ * The Translator factory class.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
  * @since Feb 23, 2012
  */
-public interface TranslatorFactory {
+public final class TranslatorFactory {
 
-  Translator getTranslator();
+
+  private TranslatorFactory() {
+
+  }
+
+  public static Translator getTranslator() {
+    return null;
+  }
+
+  public static Locale getDefaultLocale() {
+    return null;
+  }
+
+  public static Locale getCurrentLocale() {
+    return null;
+  }
+
+  public static List<Locale> getSupportedLocales() {
+    return null;
+  }
+
+  public static ITranslatorFactory getITranslatorFactory() {
+    return null;
+  }
+
 }

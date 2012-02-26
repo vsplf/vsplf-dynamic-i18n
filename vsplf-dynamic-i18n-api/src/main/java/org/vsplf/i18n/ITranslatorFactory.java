@@ -13,13 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.vsplf.i18n;
 
 /**
- * Dynamic-I18N framework from VSPLF Software Foundation
- * <h1>Introduction</h1>
+ * The TranslatorFactory interface to gets implementation instances.
  *
- * <h1>With application developers</h1>
- *
- * <h1>With implementers</h1>
+ * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
+ * @since Feb 26, 2012
  */
-package org.vsplf.i18n;
+public interface ITranslatorFactory extends ILocaleAware {
+  /**
+   * Gets Translator instance.
+   *
+   * @return the Translator instance.
+   */
+  Translator getTranslator();
+}
