@@ -103,7 +103,7 @@
         <version>${maven-checkstyle-plugin.version}</version>
         <configuration>
           <configLocation>vsplf-tools/config/checkstyle/vsplf-checkstyle.xml</configLocation>
-          <headerLocation>vsplf/tools/config/checkstyle/java.header</headerLocation>
+          <headerLocation>vsplf-tools/config/checkstyle/java.header</headerLocation>
         </configuration>
       </plugin>
     </plugins>
