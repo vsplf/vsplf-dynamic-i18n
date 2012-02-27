@@ -64,11 +64,14 @@ public interface Translator {
   http://www.slf4j.org/localization.html
   */
 
+  /*
+  //TODO no need?
   String s_(String messageId);
 
   String sPlural_(String singularMessageId, String pluralMessageId, long count);
 
   String sPlural_(String singularMessageId, String pluralMessageId, long count,
                   Map<String, String> messageArguments);
+  */
 
 }

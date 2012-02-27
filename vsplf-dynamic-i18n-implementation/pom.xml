@@ -27,9 +27,9 @@
     <version>0.1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>vsplf-dynamic-i18n-gettext</artifactId>
-  <name>vsplf-dynamic-i18n-gettext</name>
-  <description>GNU gettext implementation for vsplf-dynamic-i18n</description>
+  <artifactId>vsplf-dynamic-i18n-implementation</artifactId>
+  <name>vsplf-dynamic-i18n-implementation</name>
+  <description>native implementation for vsplf-dynamic-i18n</description>
 
   <dependencies>
     <dependency>

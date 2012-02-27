@@ -15,19 +15,33 @@
  */
 package org.vsplf.i18n.impl;
 
-import org.vsplf.i18n.ITranslatorFactory;
-import org.vsplf.i18n.spi.TranslatorFactoryBinder;
+import java.util.Map;
+
+import org.vsplf.i18n.Translator;
 
 /**
- * Static TranslatorFactoryBinder for native java support.
- *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
- * @since Feb 27, 2012
+ * @since 2/27/12
  */
-public class StaticTranslatorFactoryBinder implements TranslatorFactoryBinder {
-
+public class I18NTranslator implements Translator {
   @Override
-  public ITranslatorFactory getTranslatorFactory() {
+  public String _(String messageId) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
+
+  @Override
+  public String _(String messageId, Map<String, String> messageArguments) {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
+  public String plural_(String singularMessageId, String pluralMessageId, long count) {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
+  public String plural_(String singularMessageId, String pluralMessageId, long count, Map<String, String> messageArguments) {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
 }
