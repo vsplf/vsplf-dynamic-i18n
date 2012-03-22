@@ -7,8 +7,8 @@ https://github.com/vsplf/vsplf-dynamic-i18n/wiki
 ### Download this framework's artifacts
 
 * Download artifacts (api and implementation) at:
-** https://repository-vsplf.forge.cloudbees.com/release/ for released version.
-** http://repository-vsplf.forge.cloudbees.com/snapshot/ for developing version.
+  * https://repository-vsplf.forge.cloudbees.com/release/ for released version.
+  * http://repository-vsplf.forge.cloudbees.com/snapshot/ for developing version.
 * Include download artifacts in your application's classpath.
 
 ### Usage
