@@ -1,0 +1,19 @@
+The list of reference resources related to this project:
+
+* http://site.icu-project.org/
+* http://docs.oracle.com/javase/tutorial/i18n/index.html
+* http://www.w3.org/International/
+* https://sites.google.com/site/openjdklocale/Home
+* https://wiki.jenkins-ci.org/display/JENKINS/Internationalization
+* http://www.slideshare.net/drupalcon/localize-drupal-org
+* http://www.lingoport.com/software-internationalization-products/globalyzer-3/
+* http://code.google.com/p/gettext-commons/
+* http://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Java.html
+* http://evolvingweb.ca/story/drupal-7-multilingual-whats-new-i18n
+* http://drupal.org/project/i18n
+* http://drupal.org/documentation/modules/locale
+* http://groups.drupal.org/i18n
+* http://commons.forgerock.org/i18n-framework/
+* https://github.com/zanata/zanata/
+* http://code.google.com/p/gettext-js/
+* http://drupal.org/node/322729
