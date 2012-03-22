@@ -35,6 +35,10 @@ public final class TranslatorFactory {
     return null;
   }
 
+  public static TranslatorBuilder getTranslatorBuilder() {
+    return null;
+  }
+
   public static Locale getDefaultLocale() {
     return null;
   }

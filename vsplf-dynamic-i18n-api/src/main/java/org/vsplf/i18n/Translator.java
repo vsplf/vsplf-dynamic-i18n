@@ -77,7 +77,7 @@ public interface Translator {
    * For example:
    * <pre>
    *   Translator t = TranslatorFactory.getTranslator();
-   *   t._("Hello {0}", "World");
+   *   t._("Hello {0}", new String[] {"VSPLF"});
    * </pre>
    *
    * @param messagePattern the message pattern.
@@ -95,7 +95,7 @@ public interface Translator {
    * <pre>
    *   Translator t = TranslatorFactory.getTranslator();
    *   Locale vietnamese = new Locale("vi", "VN");
-   *   t._("Hello {0}", "World", vietnamese);
+   *   t._("Hello {0}", new String[] {"VSPLF"}, vietnamese);
    * </pre>
    *
    * @param messagePattern the message pattern.
@@ -114,7 +114,7 @@ public interface Translator {
    * <pre>
    *   Translator t = TranslatorFactory.getTranslator();
    *   Map<String, String> arguments = new HashMap<String, String>();
-   *   arguments.put("name", "World");
+   *   arguments.put("name", "VSPLF");
    *   t._("Hello {name}", arguments);
    * </pre>
    *
@@ -133,7 +133,7 @@ public interface Translator {
    * <pre>
    *   Translator t = TranslatorFactory.getTranslator();
    *   Map<String, String> arguments = new HashMap<String, String>();
-   *   arguments.put("name", "World");
+   *   arguments.put("name", "VSPLF");
    *   Locale vietnamese = new Locale("vi", "VN");
    *   t._("Hello {name}", arguments, vietnamese);
    * </pre>
