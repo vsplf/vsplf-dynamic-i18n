@@ -19,9 +19,8 @@ import java.util.Locale;
 import java.util.Map;
 
 /**
- * The TranslatorBuilder for easier usage of Translator. <br />
- * TranslatorBuilder must be thread-safe.
- * For example:
+ * The TranslatorBuilder for easier usage of Translator. <br /> TranslatorBuilder must be
+ * thread-safe. For example:
  * <pre>
  *  TranslatorBuilder tb = TranslatorFactory.getTranslatorBuilder();
  *  String message = tb._("hello {0}").
@@ -42,12 +41,20 @@ public interface TranslatorBuilder {
   TranslatorBuilder _(String messagePattern);
 
   /**
-   * Sets the message arguments as an array of objects.
+   * Sets the message arguments as an array of object arguments.
    *
    * @param messageArguments an array of objects for message arguments.
    * @return the translator builder.
    */
   TranslatorBuilder messageArguments(Object[] messageArguments);
+
+  /**
+   * Appends a message argument with the type of Object to the array of object arguments.
+   *
+   * @param messageArgument an object argument
+   * @return the translator builder.
+   */
+  TranslatorBuilder appendArgument(Object messageArgument);
 
   /**
    * Sets the message arguments as a map of objects with key as named argument.
@@ -56,6 +63,16 @@ public interface TranslatorBuilder {
    * @return the translator builder.
    */
   TranslatorBuilder messageArguments(Map<String, Object> messageArguments);
+
+  /**
+   * Appends a message argument with the type of Map<String, Object> to the array of message
+   * arguments.
+   *
+   * @param keyName              the key name associated with message argument value.
+   * @param messageArgumentValue the message argument value.
+   * @return the translator builder.
+   */
+  TranslatorBuilder appendArgument(String keyName, Object messageArgumentValue);
 
   /**
    * Sets the specific locale to translate a message pattern.
