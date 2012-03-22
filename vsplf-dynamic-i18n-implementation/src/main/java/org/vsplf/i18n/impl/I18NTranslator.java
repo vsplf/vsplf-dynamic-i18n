@@ -15,6 +15,7 @@
  */
 package org.vsplf.i18n.impl;
 
+import java.util.Locale;
 import java.util.Map;
 
 import org.vsplf.i18n.Translator;
@@ -25,15 +26,33 @@ import org.vsplf.i18n.Translator;
  */
 public class I18NTranslator implements Translator {
 
+  @Override
   public String _(String messagePattern) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 
+  @Override
+  public String _(String messagePattern, Locale locale) {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
+  public String _(String messagePattern, Object[] messageArguments, Locale locale) {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
   public String _(String messagePattern, Object[] messageArguments) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 
+  @Override
   public String _(String messagePattern, Map<String, Object> messageArguments) {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
+  public String _(String messagePattern, Map<String, Object> messageArguments, Locale locale) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 }
