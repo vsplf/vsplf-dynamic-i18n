@@ -69,9 +69,9 @@ To check any violations, use this command below:
 ### Project resources
 
 * Issues management: https://github.com/vsplf/vsplf-dynamic-i18n/issues
-* Jenkins continuous integration build: https://vsplf.ci.cloudbees.com/job/vsplf-dynamic-i18n-master-ci/ ![Build on CloudBees](http://www.cloudbees.com/sites/default/files/Button-Built-on-CB-1.png)
-* Artifact deployment:
+* Jenkins continuous integration build: https://vsplf.ci.cloudbees.com/job/vsplf-dynamic-i18n-master-ci/
   * release repository:  https://repository-vsplf.forge.cloudbees.com/release/
   * snapshot repository: http://repository-vsplf.forge.cloudbees.com/snapshot/
+* Ohloh report: https://www.ohloh.net/p/vsplf-dynamic-i18n
 
 ### Logging
