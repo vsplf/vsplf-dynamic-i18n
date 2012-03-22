@@ -87,5 +87,5 @@ public interface TranslatorBuilder {
    *
    * @return the translated message.
    */
-  String message();
+  String translate();
 }

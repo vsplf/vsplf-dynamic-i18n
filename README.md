@@ -23,9 +23,10 @@ public class SampleClass {
   private static TranslatorBuilder sb = TranslatorFactory.getTranslatorBuilder();
 
   public void sayHi() {
-    String message = sb._("Hello {0}").
-                        messageArguments(new String[]{"VSPLF"}).
-                        message();
+    String message = sb._("Hello {0}, my name is {name}").
+                        appendArgument("VSPLF").
+                        appendArgument("name", "dynamic i18n").
+                        translate();
 
     System.out.println(message);
   }
