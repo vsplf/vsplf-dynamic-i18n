@@ -15,6 +15,7 @@
  */
 package org.vsplf.i18n;
 
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -38,7 +39,7 @@ import java.util.Map;
 public interface Translator {
 
   /**
-   * Translates a message pattern (simples string).
+   * Translates a message pattern (simples string) with locale aware.
    * <br />
    * For example:
    * <pre>
@@ -53,7 +54,25 @@ public interface Translator {
   String _(String messagePattern);
 
   /**
-   * Translates a message pattern with an array of message arguments (support numbered arguments).
+   * Translates a message pattern (simples string) with specified locale.
+   * <br />
+   * For example:
+   * <pre>
+   *   Translator t = TranslatorFactory.getTranslator();
+   *   Locale vietnamese = new Locale("vi", "VN");
+   *   t._("Hello World", vietnamese);
+   * </pre>
+   *
+   * @param messagePattern the message pattern.
+   * @param locale the specified locale.
+   *
+   * @return the translated string.
+   */
+  String _(String messagePattern, Locale locale);
+
+  /**
+   * Translates a message pattern with an array of message arguments (support numbered arguments)
+   * with locale aware.
    * <br />
    * For example:
    * <pre>
@@ -69,7 +88,27 @@ public interface Translator {
   String _(String messagePattern, Object[] messageArguments);
 
   /**
-   * Translates a message pattern with a map of message arguments (support named arguments).
+   * Translates a message pattern with an array of message arguments (support numbered arguments)
+   * with a specified locale.
+   * <br />
+   * For example:
+   * <pre>
+   *   Translator t = TranslatorFactory.getTranslator();
+   *   Locale vietnamese = new Locale("vi", "VN");
+   *   t._("Hello {0}", "World", vietnamese);
+   * </pre>
+   *
+   * @param messagePattern the message pattern.
+   * @param messageArguments the array of message arguments.
+   * @param locale the specified locale.
+   *
+   * @return the translated string.
+   */
+  String _(String messagePattern, Object[] messageArguments, Locale locale);
+
+  /**
+   * Translates a message pattern with a map of message arguments (support named arguments) with
+   * locale aware.
    * <br />
    * For example:
    * <pre>
@@ -85,5 +124,26 @@ public interface Translator {
    * @return the translated string.
    */
   String _(String messagePattern, Map<String, Object> messageArguments);
+
+  /**
+   * Translates a message pattern with a map of message arguments (support named arguments) with
+   * a specific locale.
+   * <br />
+   * For example:
+   * <pre>
+   *   Translator t = TranslatorFactory.getTranslator();
+   *   Map<String, String> arguments = new HashMap<String, String>();
+   *   arguments.put("name", "World");
+   *   Locale vietnamese = new Locale("vi", "VN");
+   *   t._("Hello {name}", arguments, vietnamese);
+   * </pre>
+   *
+   * @param messagePattern the message pattern.
+   * @param messageArguments the map of message arguments.
+   * @param locale the specified locale.
+   *
+   * @return the translated string.
+   */
+  String _(String messagePattern, Map<String, Object> messageArguments, Locale locale);
 
 }
