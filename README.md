@@ -2,6 +2,41 @@
 
 https://github.com/vsplf/vsplf-dynamic-i18n/wiki
 
+## How to use this framework
+
+### Download this framework's artifacts
+
+* Download artifacts (api and implementation) at:
+** https://repository-vsplf.forge.cloudbees.com/release/ for released version.
+** http://repository-vsplf.forge.cloudbees.com/snapshot/ for developing version.
+* Include download artifacts in your application's classpath.
+
+### Usage
+Anywhere in your application's code, use TranslatorBuilder like the sample below:
+<pre>
+package org.vsplf.i18n.sample;
+
+import org.vsplf.i18n.TranslatorBuilder;
+import org.vsplf.i18n.TranslatorFactory;
+
+public class SampleClass {
+  private static TranslatorBuilder sb = TranslatorFactory.getTranslatorBuilder();
+
+  public void sayHi() {
+    String message = sb._("Hello {0}").
+                        messageArguments(new String[]{"VSPLF"}).
+                        message();
+
+    System.out.println(message);
+  }
+
+}
+</pre>
+
+Note: You can you Translator, too. Both will return the same result.
+
+### Run the supported tools
+//TODO
 
 ## How to develop
 
@@ -39,6 +74,3 @@ To check any violations, use this command below:
   * snapshot repository: http://repository-vsplf.forge.cloudbees.com/snapshot/
 
 ### Logging
-
-
-## How to use this framework
