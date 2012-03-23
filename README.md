@@ -70,6 +70,7 @@ To check any violations, use this command below:
 
 * Issues management: https://github.com/vsplf/vsplf-dynamic-i18n/issues
 * Jenkins continuous integration build: https://vsplf.ci.cloudbees.com/job/vsplf-dynamic-i18n-master-ci/
+* Artifact deployment:
   * release repository:  https://repository-vsplf.forge.cloudbees.com/release/
   * snapshot repository: http://repository-vsplf.forge.cloudbees.com/snapshot/
 * Ohloh report: https://www.ohloh.net/p/vsplf-dynamic-i18n
