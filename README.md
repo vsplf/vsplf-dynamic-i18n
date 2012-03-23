@@ -34,7 +34,7 @@ public class SampleClass {
 }
 </pre>
 
-Note: You can you Translator, too. Both will return the same result.
+Note: You can use Translator, too. Both will return the same result.
 
 ### Run the supported tools
 //TODO
