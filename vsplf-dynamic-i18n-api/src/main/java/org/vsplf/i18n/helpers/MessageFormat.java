@@ -28,12 +28,13 @@ import java.text.ParsePosition;
 public final class MessageFormat extends Format {
 
   @Override
-  public StringBuffer format(Object obj, StringBuffer toAppendTo, FieldPosition pos) {
+  public final StringBuffer format(final Object obj, final StringBuffer toAppendTo,
+                                   final FieldPosition pos) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 
   @Override
-  public Object parseObject(String source, ParsePosition pos) {
+  public final Object parseObject(final String source, final ParsePosition pos) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 }

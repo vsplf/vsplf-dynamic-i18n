@@ -15,12 +15,11 @@
  */
 
 /**
- * Dynamic-I18N framework from VSPLF Software Foundation.
- *
+ * Service provider interface as entry point for implementers.
  * <h1>Introduction</h1>
  *
- * <h1>With application developers</h1>
+ * <h1>How to implement vsplf-dynamic-i18n-api</h1>
  *
- * <h1>With implementers</h1>
+ * <h1>FAQs</h1>
  */
-package org.vsplf.i18n;
+package org.vsplf.i18n.spi;

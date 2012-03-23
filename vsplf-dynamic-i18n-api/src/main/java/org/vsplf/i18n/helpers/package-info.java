@@ -15,12 +15,12 @@
  */
 
 /**
- * Dynamic-I18N framework from VSPLF Software Foundation.
+ * The helper package is used for serving common functionality to api package and implementers.
  *
  * <h1>Introduction</h1>
  *
- * <h1>With application developers</h1>
+ * <h1>How to use these helper classes</h1>
  *
- * <h1>With implementers</h1>
+ * <h1>FAQs</h1>
  */
-package org.vsplf.i18n;
+package org.vsplf.i18n.helpers;
