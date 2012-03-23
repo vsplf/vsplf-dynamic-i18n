@@ -36,6 +36,10 @@
   <properties>
     <org.testng.version>6.1.1</org.testng.version>
     <org.hamcrest.version>1.2.1</org.hamcrest.version>
+
+    <!-- TODO move to parent pom -->
+    <maven-pmd-plugin.version>2.7.1</maven-pmd-plugin.version>
+    <targetJdk>1.5</targetJdk>
   </properties>
 
 
@@ -108,6 +112,22 @@
               </execution>
             </executions>
           </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-pmd-plugin</artifactId>
+            <version>${maven-pmd-plugin.version}</version>
+            <configuration>
+              <linkXref>true</linkXref>
+            </configuration>
+            <executions>
+              <execution>
+                <phase>compile</phase>
+                <goals>
+                  <goal>pmd</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -123,6 +143,15 @@
         <configuration>
           <configLocation>vsplf-tools/config/checkstyle/vsplf-checkstyle.xml</configLocation>
           <headerLocation>vsplf-tools/config/checkstyle/java.header</headerLocation>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>${maven-pmd-plugin.version}</version>
+        <configuration>
+          <linkXref>true</linkXref>
         </configuration>
       </plugin>
     </plugins>
