@@ -31,19 +31,34 @@
   <packaging>pom</packaging>
 
   <name>vsplf-dynamic-i18n</name>
-  <url>http://vsplf.org/projects/vsplf-dynamic-i18n</url>
+  <description>Make it easy and painless to I18N-ize java projects with: simple APIs and a wide
+    range of supported tools.</description>
+  <url>http://vsplf.github.com/vsplf-dynamic-i18n/latest/</url>
 
   <properties>
     <org.testng.version>6.1.1</org.testng.version>
     <org.hamcrest.version>1.2.1</org.hamcrest.version>
-
-    <!-- TODO move to parent pom -->
-    <maven-pmd-plugin.version>2.7.1</maven-pmd-plugin.version>
-    <targetJdk>1.5</targetJdk>
-    <findbugs-maven-plugin.version>2.4.0</findbugs-maven-plugin.version>
-    <maven-jxr-plugin.version>2.3</maven-jxr-plugin.version>
   </properties>
 
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/vsplf/vsplf-dynamic-i18n/issues</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>jenkins</system>
+    <url>https://vsplf.ci.cloudbees.com/job/vsplf-dynamic-i18n-master-ci/</url>
+  </ciManagement>
+
+  <mailingLists>
+    <mailingList>
+      <name>vsplf-dynamic-i18n</name>
+      <subscribe>https://groups.google.com/forum/?fromgroups#!forum/vsplf-dynamic-i18n</subscribe>
+      <unsubscribe>https://groups.google.com/forum/?fromgroups#!forum/vsplf-dynamic-i18n</unsubscribe>
+      <post>https://groups.google.com/forum/?fromgroups#!forum/vsplf-dynamic-i18n</post>
+      <archive>https://groups.google.com/forum/?fromgroups#!forum/vsplf-dynamic-i18n</archive>
+    </mailingList>
+  </mailingLists>
 
   <repositories>
     <repository>
@@ -198,5 +213,18 @@
       </plugin>
     </plugins>
   </reporting>
+
+  <developers>
+    <developer>
+      <name>Hoat Le</name>
+      <email>hoatlevan at gmail dot com</email>
+      <roles>
+        <role>PL</role>
+      </roles>
+      <organization>VSPLF</organization>
+      <timezone>+7</timezone>
+      <url>http://hoatle.net</url>
+    </developer>
+  </developers>
 
 </project>

@@ -32,6 +32,12 @@
   <version>0.1.0-SNAPSHOT</version>
   <name>vsplf-dynamic-i18n-implementation</name>
   <description>native implementation for vsplf-dynamic-i18n</description>
+  <url>http://vsplf.github.com/vsplf-dynamic-i18n/latest/vsplf-dynamic-i18n-implementation</url>
+
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/vsplf/vsplf-dynamic-i18n/issues?labels=implementation&amp;sort=created&amp;direction=desc&amp;state=open&amp;page=1</url>
+  </issueManagement>
 
   <dependencies>
     <dependency>
