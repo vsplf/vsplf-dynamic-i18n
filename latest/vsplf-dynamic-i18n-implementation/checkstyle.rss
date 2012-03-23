@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>vsplf-dynamic-i18n-implementation - Checkstyle report</title>
+    <link>http://vsplf.org/projects/vsplf-dynamic-i18n/vsplf-dynamic-i18n-implementation</link>
+    <description>vsplf-dynamic-i18n-implementation - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2012 VSPLF Software Foundation (VSF)</copyright>
+    <item>
+      <title>File: 3,
+             Errors: 47,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://vsplf.org/projects/vsplf-dynamic-i18n/vsplf-dynamic-i18n-implementation/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/vsplf-dynamic-i18n-implementation/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/vsplf-dynamic-i18n-implementation/checkstyle.html#org.vsplf.i18n.impl.I18NTranslatorFactory.java">org/vsplf/i18n/impl/I18NTranslatorFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/vsplf-dynamic-i18n-implementation/checkstyle.html#org.vsplf.i18n.impl.StaticTranslatorFactoryBinder.java">org/vsplf/i18n/impl/StaticTranslatorFactoryBinder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/vsplf-dynamic-i18n-implementation/checkstyle.html#org.vsplf.i18n.impl.I18NTranslator.java">org/vsplf/i18n/impl/I18NTranslator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  34
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

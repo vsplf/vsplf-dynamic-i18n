@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>vsplf-dynamic-i18n - Checkstyle report</title>
+    <link>http://vsplf.org/projects/vsplf-dynamic-i18n</link>
+    <description>vsplf-dynamic-i18n - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2012 VSPLF Software Foundation (VSF)</copyright>
+    <item>
+      <title>File: 13,
+             Errors: 70,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.ILocaleAware.java">org/vsplf/i18n/ILocaleAware.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.TranslatorFactory.java">org/vsplf/i18n/TranslatorFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.Translator.java">org/vsplf/i18n/Translator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.package-info.java">org/vsplf/i18n/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.impl.I18NTranslator.java">org/vsplf/i18n/impl/I18NTranslator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  34
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.ITranslatorFactory.java">org/vsplf/i18n/ITranslatorFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.impl.I18NTranslatorFactory.java">org/vsplf/i18n/impl/I18NTranslatorFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.helpers.package-info.java">org/vsplf/i18n/helpers/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.helpers.MessageFormat.java">org/vsplf/i18n/helpers/MessageFormat.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.spi.package-info.java">org/vsplf/i18n/spi/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.TranslatorBuilder.java">org/vsplf/i18n/TranslatorBuilder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.impl.StaticTranslatorFactoryBinder.java">org/vsplf/i18n/impl/StaticTranslatorFactoryBinder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://vsplf.org/projects/vsplf-dynamic-i18n/checkstyle.html#org.vsplf.i18n.spi.TranslatorFactoryBinder.java">org/vsplf/i18n/spi/TranslatorFactoryBinder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
