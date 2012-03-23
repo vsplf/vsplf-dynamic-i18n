@@ -34,7 +34,8 @@
   <url>http://vsplf.org/projects/vsplf-dynamic-i18n</url>
 
   <properties>
-    <vsplf-build-tools.version>0.1.0-SNAPSHOT</vsplf-build-tools.version>
+    <org.testng.version>6.1.1</org.testng.version>
+    <org.hamcrest.version>1.2.1</org.hamcrest.version>
   </properties>
 
 
@@ -56,6 +57,24 @@
       </releases>
     </repository>
   </repositories>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>${org.testng.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>${org.hamcrest.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
 
   <modules>
     <module>vsplf-dynamic-i18n-api</module>
