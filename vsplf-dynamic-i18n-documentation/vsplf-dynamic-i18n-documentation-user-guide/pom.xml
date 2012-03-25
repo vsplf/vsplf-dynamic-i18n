@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (C) VSPLF Software Foundation (VSF), the origin author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.vsplf.vsplf-dynamic-i18n</groupId>
+    <artifactId>vsplf-dynamic-i18n-documentation</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>org.vsplf.vsplf-dynamic-i18n.vsplf-dynamic-i18n-documentation</groupId>
+  <artifactId>vsplf-dynamic-i18n-documentation-user-guide</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>vsplf-dynamic-i18n-documentation-user-guide</name>
+  <packaging>pom</packaging>
+
+
+  <build>
+
+    <plugins>
+      <plugin>
+        <groupId>com.agilejava.docbkx</groupId>
+        <artifactId>docbkx-maven-plugin</artifactId>
+        <version>${docbkx-maven-plugin.version}</version>
+        <executions>
+          <!-- -->
+          <execution>
+            <id>vsplf-dynamic-i18n-documentation-specification</id>
+            <phase>pre-site</phase>
+            <goals>
+              <goal>generate-html</goal>
+              <goal>generate-pdf</goal>
+            </goals>
+            <configuration>
+              <!-- per execution configuration -->
+              <includes>book.xml</includes>
+              <!--<draftMode>yes</draftMode>-->
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>net.sf.docbook</groupId>
+            <artifactId>docbook-xml</artifactId>
+            <version>${docbook-xml.version}</version>
+            <classifier>resources</classifier>
+            <type>zip</type>
+            <scope>runtime</scope>
+          </dependency>
+        </dependencies>
+        <configuration>
+          <!-- shared configuration -->
+          <generatedSourceDirectory>${project.build.directory}/docbkx/generated</generatedSourceDirectory>
+          <xincludeSupported>true</xincludeSupported>
+          <paperType>A4</paperType>
+          <fop1Extensions>1</fop1Extensions>
+
+          <foCustomization>${project.basedir}/src/docbkx-stylesheet/fo/docbook.xsl</foCustomization>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

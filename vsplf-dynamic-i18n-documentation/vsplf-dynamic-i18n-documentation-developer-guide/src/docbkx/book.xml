@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (C) VSPLF Software Foundation (VSF), the origin author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<book version="5.0" xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:db="http://docbook.org/ns/docbook" xml:lang="en">
+  <info>
+    <title>vsplf-dynamic-i18n developer guide</title>
+    <author>
+      <personname>Hoat Le</personname>
+      <email>hoatlevan@gmail.com</email>
+      <uri>http://hoatle.net</uri>
+    </author>
+    <copyright>
+      <year>2012 - </year>
+      <holder>VSPLF</holder>
+    </copyright>
+  </info>
+
+
+  <dedication>
+    <title>Dedication</title>
+    <para>To the project contributors!</para>
+  </dedication>
+
+  <chapter xml:id="introduction">
+    <title>Introduction</title>
+
+    <section>
+      <title>About this developer guide</title>
+      <para>//TODO</para>
+    </section>
+
+    <section>
+      <title>Developer guide mission</title>
+      <para>//TODO</para>
+    </section>
+
+  </chapter>
+
+</book>
