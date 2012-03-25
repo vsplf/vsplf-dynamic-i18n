@@ -64,8 +64,8 @@ https://github.com/vsplf/vsplf-dynamic-i18n/wiki
                               "female {{user_name} finished her task.}" +
                               "other {{user_name} finished their task.}" +
                             "}").
-                          appendArgument("user_name", userName).
                           appendArgument("gender", gender).
+                          appendArgument("user_name", userName).
                           translate();
       //output depends on locale context
       //If English:
@@ -105,6 +105,10 @@ https://github.com/vsplf/vsplf-dynamic-i18n/wiki
                                        "other {{user_name} has # files on their disk \"{disk_name}\".}" +
                                      "}" +
                             "}").
+                          appendArgument("num_files", numberOfFiles).
+                          appendArgument("gender", gender).
+                          appendArgument("user_name", userName).
+                          appendArgument("disk_name", diskName).
                           translate();
       //output depends on locale context
       //if English:
