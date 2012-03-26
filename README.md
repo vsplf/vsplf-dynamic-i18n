@@ -186,7 +186,7 @@ To check any violations, use this command below:
 
 ### Project resources
 
-* Issues management: https://github.com/vsplf/vsplf-dynamic-i18n/issues
+* Issues management: https://vs-plf.atlassian.net/browse/DINTL
 * Jenkins continuous integration build: https://vsplf.ci.cloudbees.com/job/vsplf-dynamic-i18n-master-ci/
 * Artifact deployment:
   * release repository:  https://repository-vsplf.forge.cloudbees.com/release/
