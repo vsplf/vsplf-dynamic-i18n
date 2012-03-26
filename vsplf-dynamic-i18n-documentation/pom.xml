@@ -31,6 +31,7 @@
 
   <name>vsplf-dynamic-i18n-documentation</name>
   <packaging>pom</packaging>
+  <url>http://vsplf.github.com/vsplf-dynamic-i18n/latest/vsplf-dynamic-i18n-documentation</url>
 
   <properties>
     <docbkx-maven-plugin.version>2.0.14</docbkx-maven-plugin.version>
