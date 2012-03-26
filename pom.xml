@@ -41,8 +41,8 @@
   </properties>
 
   <issueManagement>
-    <system>github</system>
-    <url>https://github.com/vsplf/vsplf-dynamic-i18n/issues</url>
+    <system>jira</system>
+    <url>https://vs-plf.atlassian.net/browse/DINTL</url>
   </issueManagement>
 
   <ciManagement>
