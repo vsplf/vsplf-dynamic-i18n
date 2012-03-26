@@ -37,6 +37,11 @@
     <docbook-xml.version>5.0-all</docbook-xml.version>
   </properties>
 
+  <issueManagement>
+    <system>jira</system>
+    <url>https://vs-plf.atlassian.net/browse/DINTL/component/10002</url>
+  </issueManagement>
+
   <modules>
     <module>vsplf-dynamic-i18n-documentation-specification</module>
     <module>vsplf-dynamic-i18n-documentation-user-guide</module>

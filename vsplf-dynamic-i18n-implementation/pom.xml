@@ -35,8 +35,8 @@
   <url>http://vsplf.github.com/vsplf-dynamic-i18n/latest/vsplf-dynamic-i18n-implementation</url>
 
   <issueManagement>
-    <system>github</system>
-    <url>https://github.com/vsplf/vsplf-dynamic-i18n/issues?labels=implementation&amp;sort=created&amp;direction=desc&amp;state=open&amp;page=1</url>
+    <system>jira</system>
+    <url>https://vs-plf.atlassian.net/browse/DINTL/component/10001</url>
   </issueManagement>
 
   <dependencies>
