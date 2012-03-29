@@ -13,28 +13,44 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.vsplf.i18n.helpers;
+package org.vsplf.i18n;
 
-import java.text.FieldPosition;
-import java.text.Format;
-import java.text.ParsePosition;
+import java.util.List;
+import java.util.Locale;
 
 /**
- * Lightweight porting of ICU MessageFormat.
+ * The LocaleAware interface.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
- * @since Mar 23, 2012
+ * @since Feb 27, 2012
  */
-public final class MessageFormat extends Format {
+public interface LocaleAware {
 
-  @Override
-  public StringBuffer format(final Object obj, final StringBuffer toAppendTo,
-                                   final FieldPosition pos) {
-    return null;  //To change body of implemented methods use File | Settings | File Templates.
-  }
+  /**
+   * Gets the current selected locale.
+   *
+   * @return the current selected locale.
+   */
+  Locale getCurrentSelectedLocale();
 
-  @Override
-  public Object parseObject(final String source, final ParsePosition pos) {
-    return null;  //To change body of implemented methods use File | Settings | File Templates.
-  }
+  /**
+   * Sets the current selected locale.
+   *
+   * @param selectedLocale the selected locale.
+   */
+  void setCurrentSelectedLocale(Locale selectedLocale);
+
+  /**
+   * Gets the system default Locale.
+   *
+   * @return the system default locale.
+   */
+  Locale getDefaultLocale();
+
+  /**
+   * Gets the list of supported locales.
+   *
+   * @return the list of supported locales.
+   */
+  List<Locale> getSupportedLocales();
 }

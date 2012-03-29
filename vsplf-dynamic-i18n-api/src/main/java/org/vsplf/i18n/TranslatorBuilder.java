@@ -22,7 +22,7 @@ import java.util.Map;
  * The TranslatorBuilder for easier usage of Translator. <br /> TranslatorBuilder must be
  * thread-safe. For example:
  * <pre>
- *  TranslatorBuilder tb = TranslatorFactory.getTranslatorBuilder();
+ *  TranslatorBuilder tb = I18N.getTranslatorBuilder();
  *  String message = tb._("hello {0}").
  *                      messageArguments(new String[]{"VSPLF"}).
  *                      message();

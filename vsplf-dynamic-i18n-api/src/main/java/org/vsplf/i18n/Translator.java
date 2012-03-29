@@ -27,7 +27,7 @@ import java.util.Map;
  * <p/>
  * Sample code for client code:
  * <pre>
- *   Translator t = TranslatorFactory.getTranslator();
+ *   Translator t = I18N.getTranslator();
  *   t._("Hello World Out There!");
  * </pre>
  *
@@ -43,7 +43,7 @@ public interface Translator {
    * <br />
    * For example:
    * <pre>
-   *   Translator t = TranslatorFactory.getTranslator();
+   *   Translator t = I18N.getTranslator();
    *   t._("Hello World");
    * </pre>
    *
@@ -58,7 +58,7 @@ public interface Translator {
    * <br />
    * For example:
    * <pre>
-   *   Translator t = TranslatorFactory.getTranslator();
+   *   Translator t = I18N.getTranslator();
    *   Locale vietnamese = new Locale("vi", "VN");
    *   t._("Hello World", vietnamese);
    * </pre>
@@ -76,7 +76,7 @@ public interface Translator {
    * <br />
    * For example:
    * <pre>
-   *   Translator t = TranslatorFactory.getTranslator();
+   *   Translator t = I18N.getTranslator();
    *   t._("Hello {0}", new String[] {"VSPLF"});
    * </pre>
    *
@@ -93,7 +93,7 @@ public interface Translator {
    * <br />
    * For example:
    * <pre>
-   *   Translator t = TranslatorFactory.getTranslator();
+   *   Translator t = I18N.getTranslator();
    *   Locale vietnamese = new Locale("vi", "VN");
    *   t._("Hello {0}", new String[] {"VSPLF"}, vietnamese);
    * </pre>
@@ -112,7 +112,7 @@ public interface Translator {
    * <br />
    * For example:
    * <pre>
-   *   Translator t = TranslatorFactory.getTranslator();
+   *   Translator t = I18N.getTranslator();
    *   Map<String, String> arguments = new HashMap<String, String>();
    *   arguments.put("name", "VSPLF");
    *   t._("Hello {name}", arguments);
@@ -131,7 +131,7 @@ public interface Translator {
    * <br />
    * For example:
    * <pre>
-   *   Translator t = TranslatorFactory.getTranslator();
+   *   Translator t = I18N.getTranslator();
    *   Map<String, String> arguments = new HashMap<String, String>();
    *   arguments.put("name", "VSPLF");
    *   Locale vietnamese = new Locale("vi", "VN");

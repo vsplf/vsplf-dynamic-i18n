@@ -8,7 +8,7 @@ https://github.com/vsplf/vsplf-dynamic-i18n/wiki
 
   <pre>
 
-    private static final TranslatorBuilder tb = TranslatorFactory.getTranslatorBuilder();
+    private static final TranslatorBuilder tb = I18N.getTranslatorBuilder();
 
     public void translateSimple() {
       String message = tb._("hello world!").
@@ -26,7 +26,7 @@ https://github.com/vsplf/vsplf-dynamic-i18n/wiki
 
   <pre>
 
-    private static final TranslatorBuilder tb = TranslatorFactory.getTranslatorBuilder();
+    private static final TranslatorBuilder tb = I18N.getTranslatorBuilder();
 
     public void translatePlural() {
       int numberOfFiles = 5;
@@ -53,7 +53,7 @@ https://github.com/vsplf/vsplf-dynamic-i18n/wiki
 
   <pre>
 
-    private static final TranslatorBuilder tb = TranslatorFactory.getTranslatorBuilder();
+    private static final TranslatorBuilder tb = I18N.getTranslatorBuilder();
 
     public void translateGender() {
       String userName = "John";
@@ -80,7 +80,7 @@ https://github.com/vsplf/vsplf-dynamic-i18n/wiki
 
   <pre>
 
-    private static final TranslatorBuilder tb = TranslatorFactory.getTranslatorBuilder();
+    private static final TranslatorBuilder tb = I18N.getTranslatorBuilder();
 
     public void translateComplex() {
       int numberOfFiles = 2;
@@ -135,10 +135,10 @@ Anywhere in your application's code, use TranslatorBuilder like the sample below
   package org.vsplf.i18n.sample;
 
   import org.vsplf.i18n.TranslatorBuilder;
-  import org.vsplf.i18n.TranslatorFactory;
+  import org.vsplf.i18n.I18N;
 
   public class SampleClass {
-    private static TranslatorBuilder sb = TranslatorFactory.getTranslatorBuilder();
+    private static TranslatorBuilder sb = I18N.getTranslatorBuilder();
 
     public void sayHi() {
       String message = sb._("Hello {0}, my name is {name}").
