@@ -15,7 +15,7 @@
  */
 package org.vsplf.i18n.spi;
 
-import org.vsplf.i18n.ITranslatorFactory;
+import org.vsplf.i18n.TranslatorFactory;
 
 /**
  * The TranslatorFactoryBinder as service provider interface for alternative implementations.
@@ -26,10 +26,10 @@ import org.vsplf.i18n.ITranslatorFactory;
 public interface TranslatorFactoryBinder {
 
   /**
-   * Gets the ITranslatorFactory instance.
+   * Gets the TranslatorFactory instance.
    *
    * @return the translator factory
    */
-  ITranslatorFactory getTranslatorFactory();
+  TranslatorFactory getTranslatorFactory();
 
 }

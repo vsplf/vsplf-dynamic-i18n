@@ -15,7 +15,7 @@
  */
 package org.vsplf.i18n.impl;
 
-import org.vsplf.i18n.ITranslatorFactory;
+import org.vsplf.i18n.TranslatorFactory;
 import org.vsplf.i18n.spi.TranslatorFactoryBinder;
 
 /**
@@ -27,7 +27,7 @@ import org.vsplf.i18n.spi.TranslatorFactoryBinder;
 public class StaticTranslatorFactoryBinder implements TranslatorFactoryBinder {
 
 
-  public ITranslatorFactory getTranslatorFactory() {
+  public TranslatorFactory getTranslatorFactory() {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 

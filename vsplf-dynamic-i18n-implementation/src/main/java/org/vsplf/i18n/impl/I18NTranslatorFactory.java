@@ -18,16 +18,23 @@ package org.vsplf.i18n.impl;
 import java.util.List;
 import java.util.Locale;
 
-import org.vsplf.i18n.ITranslatorFactory;
+import org.vsplf.i18n.TranslatorBuilder;
+import org.vsplf.i18n.TranslatorFactory;
 import org.vsplf.i18n.Translator;
 
 /**
- * I18N TranslatorFactory native implementation.
+ * I18N I18N native implementation.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
  * @since Feb 27, 2012
  */
-public class I18NTranslatorFactory implements ITranslatorFactory {
+public class I18NTranslatorFactory implements TranslatorFactory {
+
+  @Override
+  public TranslatorBuilder getTranslatorBuilder() {
+    return null;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
   @Override
   public Translator getTranslator() {
     return null;  //To change body of implemented methods use File | Settings | File Templates.

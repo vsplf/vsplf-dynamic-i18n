@@ -15,77 +15,25 @@
  */
 package org.vsplf.i18n;
 
-import java.util.List;
-import java.util.Locale;
-
 /**
- * The Translator factory class is the main entry point for client's code.
+ * The I18N interface to gets implementation instances.
  *
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
- * @since Feb 23, 2012
+ * @since Feb 26, 2012
  */
-public final class TranslatorFactory {
+public interface TranslatorFactory extends LocaleAware {
 
   /**
-   * Gets the translator builder provided by implementation.
+   * Gets the {@link TranslatorBuilder} instance.
    *
-   * @return the translator builder.
+   * @return the TranslatorBuilder instance.
    */
-  public static TranslatorBuilder getTranslatorBuilder() {
-    return null;
-  }
-
+  TranslatorBuilder getTranslatorBuilder();
 
   /**
-   * Gets the translator provided by implementation.
+   * Gets Translator instance.
    *
-   * @return the translator instance.
+   * @return the Translator instance.
    */
-  public static Translator getTranslator() {
-    return null;
-  }
-
-  /**
-   * Gets the default locale provided by system runtime.
-   *
-   * @return the default system locale.
-   */
-  public static Locale getDefaultLocale() {
-    return null;
-  }
-
-  /**
-   * Gets the current setting locale of the application.
-   *
-   * @return the current setting locale.
-   */
-  public static Locale getCurrentLocale() {
-    return null;
-  }
-
-  /**
-   * Gets the list of supported locales for the application.
-   *
-   * @return a list of supported locales.
-   */
-  public static List<Locale> getSupportedLocales() {
-    return null;
-  }
-
-  /**
-   * Gets the associated {@link ITranslatorFactory} instance.
-   *
-   * @return the {@link ITranslatorFactory} instance.
-   */
-  public static ITranslatorFactory getITranslatorFactory() {
-    return null;
-  }
-
-  /**
-   * Avoid create instance for this class.
-   */
-  private TranslatorFactory() {
-
-  }
-
+  Translator getTranslator();
 }
