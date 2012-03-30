@@ -31,14 +31,14 @@ public interface LocaleAware {
    *
    * @return the current selected locale.
    */
-  Locale getCurrentSelectedLocale();
+  Locale getSelectedLocale();
 
   /**
    * Sets the current selected locale.
    *
    * @param selectedLocale the selected locale.
    */
-  void setCurrentSelectedLocale(Locale selectedLocale);
+  void setSelectedLocale(Locale selectedLocale);
 
   /**
    * Gets the system default Locale.

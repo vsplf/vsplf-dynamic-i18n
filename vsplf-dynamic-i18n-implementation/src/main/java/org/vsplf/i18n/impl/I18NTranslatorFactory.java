@@ -41,12 +41,12 @@ public class I18NTranslatorFactory implements TranslatorFactory {
   }
 
   @Override
-  public Locale getCurrentSelectedLocale() {
+  public Locale getSelectedLocale() {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
 
   @Override
-  public void setCurrentSelectedLocale(Locale selectedLocale) {
+  public void setSelectedLocale(Locale selectedLocale) {
     //To change body of implemented methods use File | Settings | File Templates.
   }
 

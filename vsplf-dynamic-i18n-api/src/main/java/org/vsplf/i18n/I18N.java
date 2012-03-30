@@ -86,7 +86,7 @@ public final class I18N {
    *
    * @return the {@link TranslatorFactory} instance.
    */
-  public static TranslatorFactory getITranslatorFactory() {
+  public static TranslatorFactory getTranslatorFactory() {
     return null;
   }
 
