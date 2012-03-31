@@ -59,4 +59,14 @@ public class I18NTranslatorFactory implements TranslatorFactory {
   public List<Locale> getSupportedLocales() {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
+
+  @Override
+  public boolean isSupportedFormatStyle(String formatStyle) {
+    return false;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
+  public boolean isSupportedFormatStyle(String formatStyle, String style) {
+    return false;  //To change body of implemented methods use File | Settings | File Templates.
+  }
 }

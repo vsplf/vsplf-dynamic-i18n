@@ -55,4 +55,5 @@ public class I18NTranslator implements Translator {
   public String _(String messagePattern, Map<String, Object> messageArguments, Locale locale) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
+
 }

@@ -21,7 +21,7 @@ package org.vsplf.i18n;
  * @author <a href="http://hoatle.net">hoatle (hoatlevan at gmail dot com)</a>
  * @since Feb 26, 2012
  */
-public interface TranslatorFactory extends LocaleAware {
+public interface TranslatorFactory extends LocaleAware, StyleFormatAware {
 
   /**
    * Gets the {@link TranslatorBuilder} instance.

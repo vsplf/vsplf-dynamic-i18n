@@ -82,6 +82,30 @@ public final class I18N {
   }
 
   /**
+   * Checks if an extension format style is supported by implementation vendors.
+   *
+   * @param formatStyle the extension format style
+   *
+   * @return true if that format style is supported.
+   *         false if that format style is not supported.
+   */
+  public static boolean isSupportedFormatStyle(String formatStyle) {
+    return false;
+  }
+
+  /**
+   * Checks if a style of a specified format style is supported by implementation vendors.
+   * @param formatStyle the extension format style
+   * @param style the style of that format style
+   *
+   * @return true if that style of a specified format style is supported.
+   *         false if that style of a specified format style is not supported.
+   */
+  public static boolean isSupportedFormatStyle(String formatStyle, String style) {
+    return false;
+  }
+
+  /**
    * Gets the associated {@link TranslatorFactory} instance.
    *
    * @return the {@link TranslatorFactory} instance.
