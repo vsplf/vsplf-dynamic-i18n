@@ -66,7 +66,17 @@ public class I18NTranslatorFactory implements TranslatorFactory {
   }
 
   @Override
+  public boolean isValidFormatStyle(String formatStyle, String messagePattern) {
+    return false;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
   public boolean isSupportedFormatStyle(String formatStyle, String style) {
+    return false;  //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  @Override
+  public boolean isValidFormatStyle(String formatStyle, String style, String messagePattern) {
     return false;  //To change body of implemented methods use File | Settings | File Templates.
   }
 }

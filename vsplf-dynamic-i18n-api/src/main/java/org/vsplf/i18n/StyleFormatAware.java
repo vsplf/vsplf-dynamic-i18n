@@ -33,6 +33,16 @@ public interface StyleFormatAware {
   boolean isSupportedFormatStyle(String formatStyle);
 
   /**
+   * Checks if a message pattern's format matches the format style's format.
+   *
+   * @param formatStyle the format style
+   * @param messagePattern the message pattern
+   * @return true if the message pattern's format matches the format style's format.
+   *         false if the message pattern's format does not match the format style's format.
+   */
+  boolean isValidFormatStyle(String formatStyle, String messagePattern);
+
+  /**
    * Checks if a style of a specified format style is supported by implementation vendors.
    * @param formatStyle the extension format style
    * @param style the style of that format style
@@ -41,4 +51,15 @@ public interface StyleFormatAware {
    *         false if that style of a specified format style is not supported.
    */
   boolean isSupportedFormatStyle(String formatStyle, String style);
+
+  /**
+   * Checks if a message pattern's format matches the style format of a format style.
+   *
+   * @param formatStyle the format style
+   * @param style       the associated style
+   * @param messagePattern the message pattern
+   * @return true if the message pattern's format matches the style format of a format style.
+   *         false if the message pattern's format does not match the style format of a format style.
+   */
+  boolean isValidFormatStyle(String formatStyle, String style, String messagePattern);
 }
